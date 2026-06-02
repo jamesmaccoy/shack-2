@@ -16,7 +16,8 @@ const PACKAGE_LABELS = {
 
 function getType(req) {
   const body = req.body || {};
-  return body.type || req.query?.type || null;
+  const raw = body.type || req.query?.type || null;
+  return typeof raw === "string" ? raw.trim() : raw;
 }
 
 module.exports = async function handler(req, res) {

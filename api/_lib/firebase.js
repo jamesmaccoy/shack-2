@@ -30,9 +30,20 @@ function getFirestore() {
 }
 
 async function getPackage(type) {
-  const doc = await getFirestore().collection("packages").doc(type).get();
-  if (!doc.exists) return null;
-  return doc.data();
+  const db = getFirestore();
+
+  // First try the id as-is.
+  const doc = await db.collection("packages").doc(type).get();
+  if (doc.exists) return doc.data();
+
+  // Then try trimming whitespace (common when IDs were created with a leading space).
+  const trimmedType = typeof type === "string" ? type.trim() : type;
+  if (trimmedType && trimmedType !== type) {
+    const docTrimmed = await db.collection("packages").doc(trimmedType).get();
+    if (docTrimmed.exists) return docTrimmed.data();
+  }
+
+  return null;
 }
 
 module.exports = { getPackage };
