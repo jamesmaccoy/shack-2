@@ -1,6 +1,7 @@
 const admin = require("firebase-admin");
 
 let app;
+let cachedProjectId;
 
 function getFirestore() {
   if (!app) {
@@ -25,8 +26,15 @@ function getFirestore() {
     app = admin.initializeApp({
       credential: admin.credential.cert(credentials),
     });
+    cachedProjectId = credentials.project_id;
   }
   return admin.firestore();
+}
+
+function getProjectId() {
+  // Ensure initialization happens so we can read cachedProjectId
+  getFirestore();
+  return cachedProjectId || null;
 }
 
 async function getPackage(type) {
@@ -46,5 +54,5 @@ async function getPackage(type) {
   return null;
 }
 
-module.exports = { getPackage };
+module.exports = { getPackage, getProjectId };
 

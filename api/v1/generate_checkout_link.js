@@ -1,4 +1,4 @@
-const { getPackage } = require("../_lib/firebase");
+const { getPackage, getProjectId } = require("../_lib/firebase");
 const { parsePriceToCents, createCheckout } = require("../_lib/yoco");
 
 const PACKAGE_LABELS = {
@@ -47,6 +47,7 @@ module.exports = async function handler(req, res) {
       return res.status(404).json({
         status: false,
         data: `No package found for type: ${type}`,
+        projectId: getProjectId(),
       });
     }
 
