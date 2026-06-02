@@ -41,15 +41,21 @@ function getProjectId() {
 async function getPackage(type) {
   const db = getFirestore();
 
-  // First try the id as-is.
-  const doc = await db.collection("packages").doc(type).get();
-  if (doc.exists) return doc.data();
+  const candidates = [];
+  if (typeof type === "string") {
+    const trimmed = type.trim();
+    // Site buttons use shack_stack; Firestore doc may be " shack_stack" (leading space).
+    candidates.push(type, trimmed, ` ${trimmed}`);
+  } else if (type != null) {
+    candidates.push(type);
+  }
 
-  // Then try trimming whitespace (common when IDs were created with a leading space).
-  const trimmedType = typeof type === "string" ? type.trim() : type;
-  if (trimmedType && trimmedType !== type) {
-    const docTrimmed = await db.collection("packages").doc(trimmedType).get();
-    if (docTrimmed.exists) return docTrimmed.data();
+  const seen = new Set();
+  for (const id of candidates) {
+    if (!id || seen.has(id)) continue;
+    seen.add(id);
+    const doc = await db.collection("packages").doc(id).get();
+    if (doc.exists) return doc.data();
   }
 
   return null;
