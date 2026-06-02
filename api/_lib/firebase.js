@@ -67,5 +67,5 @@ async function listPackageDocIds(limit = 10) {
   return snap.docs.map((d) => d.id);
 }
 
-module.exports = { getPackage, getProjectId, listPackageDocIds };
+module.exports = { getFirestore, getPackage, getProjectId, listPackageDocIds };
 

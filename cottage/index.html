@@ -481,22 +481,19 @@ at The Shack</div>
 			$(".price-container").each(function () {
 				var containerID = $(this).attr("id"); // Get the ID of the current container
 				var priceSpan = $(this).find(".price"); // Find the price span inside the container
-				// Retrieve data from Firebase based on the container ID
-				const docRef = db.collection("packages").doc(containerID);
-				docRef
-					.get()
-					.then((doc) => {
-						if (doc.exists) {
-							const price
-								=
-								doc.data().price; // Assuming 'price' is a field in your 'packages' documents
-							priceSpan.text(price); // Update the text of the span with the fetched price
+				jQuery
+					.getJSON("/api/v1/get_package", { type: containerID })
+					.done(function (resp) {
+						if (resp?.status === true && resp?.data?.price != null) {
+							priceSpan.text(resp.data.price);
 						} else {
-							console.log("No such document!");
+							console.error("Price not found:", resp?.data);
+							priceSpan.text("-");
 						}
 					})
-					.catch((error) => {
-						console.error("Error getting document:", error);
+					.fail(function (xhr) {
+						console.error("Price lookup failed:", xhr.responseText);
+						priceSpan.text("-");
 					});
 			});
 
