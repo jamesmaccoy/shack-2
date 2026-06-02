@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Please do not share this in a public place - Pioneers Cabin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400|Playfair+Display:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    
+    <link rel="stylesheet" href="../fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="../fonts/fontawesome/css/font-awesome.min.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/header.css">
+  </head>
+  <body oncontextmenu="return false;">
+    
+    <header class="site-header">
+      <div class="container-fluid">
+        <div class="row custom_header_row">
+          <div class="col-md-4 col-4 site-logo" data-aos="fade"><a href="../index.html"><img src="../images/F-1.png"/></a></div>
+          <div class="col-md-8 col-8 custom_site_menu">
+		  	<div class="site-header__reservations-list">
+				<ul>
+				  <li class="site-header__reservations-link" tabindex="-1" rel="noopener noreferrer">
+					<a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1-Y4p72WFjMgp925ZrXcxS0buu-lx5fGnBYcoaGkJUprhKLXHwnTe61HEDQKCVtC25DVw9QUEW">
+						
+					  <span class="caption">🗓️ Availability calendar</span>
+					</a>
+				  </li>
+				  <!--li class="site-header__reservations-number" tabindex="-1">
+					<a href="tel:+2779 6125991">
+					  <img src="img/Call.png"/>
+					  <span class="caption">+2779 6125991</span>
+					</a>
+				  </li-->
+				</ul>
+			  </div>
+          	<div class="site-menu-toggle js-site-menu-toggle"  data-aos="fade">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="site-navbar js-site-navbar">
+              	<nav role="navigation">
+			  		<div class="site-menu">
+				  		<div class="site-header">
+							<div class="site-header__outer">
+								<div class="container-fluid site-header__container">				
+									<div class="site-header__inner flex flex--vert-align">				
+										<a class="site-header__logo" href="/" tabindex="-1" aria-label="Visit Home Page">
+											 <img src="../images/F-1.png"/>
+										</a>			
+										
+										<div class="site-header__links flex flex--vert-align">
+										  <div class="site-header__reservations-list">
+											<ul>
+											
+											  <!--li class="site-header__reservations-number" tabindex="-1">
+												<a href="tel:+2779 6125991">
+												 	<img src="img/Call.svg"/>
+												  <span class="caption">+2779 6125991</span>
+												</a>
+											  </li-->
+											</ul>
+										  </div>
+										</div>
+					  				</div>
+								</div>    
+							</div>
+				  		</div>				
+				  		<div class="site-menu__background">
+							<div class="site-menu__background-inner"></div>
+				  		</div>				
+				  		<div class="site-menu__block-colour"></div>				
+				  		<div class="container site-menu__container">				
+							<nav class="site-menu__nav">
+							 	<div class="cols">
+									<ul class="col m12 tp6 t5 d4 c3 site-menu__menu-col sidmtop">
+								  		<li><span class="caption headingf6 custom_num_lab">01</span><a href="#" class="headingr3 payment_url" data-id="shack_stack">Stay at the shack</a></li>
+										<li><span class="caption headingf6 custom_num_lab">02</span><a href="#" class="headingr3 payment_url" data-id="book_an_entire_week">Book an entire week</a></li>
+										<li><span class="caption headingf6 custom_num_lab">03</span><a href="#" class="headingr3 payment_url" data-id="book_an_4hr_shoot">Book a 4hr shoot</a></li>
+										<li><span class="caption headingf6 custom_num_lab">04</span><a href="cottage/index.html" class="headingr3">The Cottage</a></li>
+									</ul>
+									<ul class="col m12 tp6 t5 d4 c3 site-menu__menu-col sidmtop">
+										<li><span class="caption headingf6 custom_num_lab">05</span><a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1-Y4p72WFjMgp925ZrXcxS0buu-lx5fGnBYcoaGkJUprhKLXHwnTe61HEDQKCVtC25DVw9QUEW" class="headingr3">🗓️ Availability calendar</a></li>
+										<li><span class="caption headingf6 custom_num_lab">06</span><a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ24Q9IxlnKHP7lZMSOpPAnIld4USXk5t6KSR9Dbg79bOoRWf96BXpm3PcdDnDc-CkZN7F5yf9o7" class="headingr3">🐣 Ambassadors</a></li>   
+									</ul>
+							  </div>
+							</nav>				
+							<div class="cols">						
+								<div class="col m12 tp6 t5 d4 c3 site-menu__content-col">						
+									<div class="site-menu__content">
+								  		<p class="caption headingf6">Find us</p>						
+								  		<p class="paraSm pt32 pb32 mt0 mb0">The Shack<br>82 llandudno road 7806 </p>
+							 			<p><a href="https://www.google.com/maps/place/The+shack/@-34.0083413,18.3423416,15z/data=!4m6!3m5!1s0x1dcc69c7091450ad:0xd43279f4a6e24827!8m2!3d-34.0083413!4d18.3423416!16s%2Fg%2F11h3_qrp0n?sa=X&ved=2ahUKEwj54_GB-riBAxWfRvEDHYXSCugQ_BJ6BAhQEAA&ved=2ahUKEwj54_GB-riBAxWfRvEDHYXSCugQ_BJ6BAhbEAk&entry=tts" rel="noopener noreferrer" target="_blank" class="small_button">Get Directions</a></p>        
+									</div>
+								</div>
+								<div class="col m12 tp6 t5 d4 c3 site-menu__content-col custom_header_numbers">
+									<div class="site-menu__content">
+								  		
+										 <div class="row">
+										 	<div class="col-md-12">
+												<div class="header_social pt-60 social">
+													 <!--a href="#"><span class="fa fa-facebook"></span></a>
+													 <a href="#"><span class="fa fa-twitter"></span></a>
+													 <a href="#"><span class="fa fa-youtube-play"></span></a-->
+													 <a href="https://www.instagram.com/shack_llandudno/"><span class="fa fa-instagram"></span></a>
+												</div>
+											</div>
+										 </div>
+									</div>				
+							  	</div>
+							</div>				
+					  	</div>
+					</div>
+				</nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+	
+    <!-- END head -->
+	<section class="custom_main_banner" style="background: url('../images/pioner\ cain\ hero.jpg');background-size: cover;">
+       <div class="half d-md-flex d-block">
+        <div class="text fullwi" data-aos="fade">
+
+          <h1 class="headingr1 white_text" data-aos="fade-up">The Pioneers Cabin</h1>
+		  <p class="white_text figtree">FOR EXCEPTIONALLY IMPORTANT OCCASIONS</p>
+          <div class="pt-60"><a href="https://calendar.app.google/M5dfrouJ44TXUrRNA" class="tr_white_button custom_float_left">Pioneers cabin inquiry</a></div>
+        </div>
+      </div>
+	 </section> 
+    
+    <!-- END section -->
+	<section class="bg-light custom_2col_inner p160 inspired_sec">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-12 col-lg-1">
+				</div>
+				<div class="col-12 col-md-12 col-lg-10">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-6">
+							<div class="headingr2">Steeped in<br>
+								architectural<br>
+								heritage.</div>
+						</div>
+						<div class="col-12 col-md-1"></div>
+						<div class="col-12 col-md-5">
+							<div class="paraReg">Overwhelming seating with 4k cinematic resolution VR
+                                experience comes standard. Unlimited adventure.
+                                Cooler for drinks. No wifi.
+							</div>
+							<div class="pt40">
+								<a href="https://www.instagram.com/shack_llandudno/guide/adventure-time/18068983177425980/?igshid=NjZiM2M3MzIxNA==" class="small_button">GUIDE BOOK</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-12 col-md-12  col-lg-1">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bg-light custom_2col_inner p160 pt0 click_gallery">
+		<div class="container overflow-hidden">
+			<div class="row justify-content-center d-md-flex d-block">
+				<div class="col-12 col-md-6 pl8pr custom_images">
+					<img src="../images/image_pioneer.png" data-sl="1" class="custom_click_image image_show" style="height: auto;"/>
+					<!-- <img src="../images/llandudnoShack_3.gif" data-sl="2" class="custom_click_image"/>
+					<img src="../images/llandudnoShack_3.gif" data-sl="3" class="custom_click_image"/>
+					<img src="../images/llandudnoShack_3.gif" data-sl="4" class="custom_click_image"/>
+					<img src="../images/llandudnoShack_3.gif" data-sl="5" class="custom_click_image"/>
+					<img src="../images/llandudnoShack_3.gif" data-sl="6" class="custom_click_image"/> -->
+				</div>
+				<div class="col-12 col-md-6 pl8pr gallery-content">
+					<div class="headingr5 pb16 clrgreen">Incomparable</div>
+					<div class="headingr2 pb32 clrgreen">The original, pioneer cabin, for the truest of occasion</div>
+					<div class="paraReg clrgreen"></div>
+					<div class="custom_point_list pt-60 custom_left">
+						<a href="javascript:;" data-sl="1" class="custom_point_click headingr4 border_bottom click_active">🗓 7 Night minimum</a>
+						<a href="javascript:;" data-sl="2" class="custom_point_click headingr4 border_bottom pt24">👮 Permit beach ceremony<br></a>
+						<a href="javascript:;" data-sl="3" class="custom_point_click headingr4 border_bottom pt24">🎶 Silent disco after sunset</a>
+						<a href="javascript:;" data-sl="4" class="custom_point_click headingr4 border_bottom pt24">🕯️ No open flames</a>
+						<a href="javascript:;" data-sl="5" class="custom_point_click headingr4 border_bottom pt24">🙌 Help to prepare the before the day</a>
+						<a href="javascript:;" data-sl="6" class="custom_point_click headingr4 border_bottom pt24">✅ Check list of necessities</a>
+						
+						
+					</div>
+					<div class="pt-60 custom_left">
+						<a href="https://calendar.app.google/M5dfrouJ44TXUrRNA" class="white_button custom_float_left">PIONEER CABIN INQUIRY</a>
+					</div>
+					<div class="paraReg clrgreen pt-30">
+						Cost break down and vendor history can be supplied, but they remains suggestions
+					</div>
+					
+				</div>
+			</div>	
+		</div>
+	</section>
+	
+	<section class="bg-light custom_dining_sec p160 pt0 ">
+       <div class="half d-md-flex d-block">
+        <div class="image order-2 " data-aos="fade"><img src="../images/ceremony.jpg" alt="Image placeholder" class="img-fluid" ></div>
+        <div class="text" data-aos="fade">
+			<div class="headingr5 pb16 clrwhite">Preparation</div>
+			<div class="headingr2 pb32 clrwhite">Wedding Ceremony</div>
+			<div class="paraReg clrwhite">Unmatched photogenic location for a brides preparation as music starts playing moments before the ceremony. Apply for your permit here</div>
+          <div class="pt-60"><a href="https://www.capetown.gov.za/City-Connect/Apply/Licences-and-permits/Filming-and-events/Apply-for-an-event-permit" class="tr_white_button custom_float_left">Permit application</a></div>
+        </div>
+      </div>
+	 </section>
+    <section class="bg-light custom_2col_inner p160 pt0 custom_spa_sec">
+		<div class="container overflow-hidden">
+			<div class="row justify-content-center d-md-flex d-block">
+				<div class="col-12 col-md-6  pl8pr">
+					<img src="../images/image 1.png" data-sl="1" class="custom_side_image pbm32"/>
+				</div>
+				<div class="col-12 col-md-6  pl8pr spa-content">
+					<div class="headingr5 pb16 clrgreen">Consideration</div>
+					<div class="headingr2 pb32 clrgreen">Sleeps two</div>
+					<div class="paraReg clrgreen custom_left">Tranquility and some anonymity are upheld through our promise to look after and maintain these locations. Please help us, by following our laws of the land, pick any litter and not draw any attention to ourselves while visiting.</div>					
+					<div class="pt-60 custom_left">
+						<a href="https://calendar.app.google/M5dfrouJ44TXUrRNA" class="white_button custom_float_left">Pioneers cabin inquiry</a>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>	
+	<section class="slider-area bg-white custom_slider">
+		<div class="slider owl-carousel owl-theme">
+			<div class="slider-item slider-item-bg-1">						
+				<div class="slider-text">
+					<img src="../images/slider_img1.png" alt="Image placeholder" class="img-fluid">
+					<div class="custom_slider_txt">
+						<p class="paraXS">1/4 &nbsp; Social gathering, garden, pioneers</p>
+					</div>
+					
+				</div>
+			</div>
+			<div class="slider-item slider-item-bg-2">					   
+				<div class="slider-text">
+					<img src="../images/slider_img2.png" alt="Image placeholder" class="img-fluid">
+					<div class="custom_slider_txt">
+						<p  class="paraXS">2/4 &nbsp; Social gathering, garden, pioneers</p>
+					</div>
+					
+				</div>
+			</div>
+			<div class="slider-item slider-item-bg-3">
+				<div class="slider-text">
+					<img src="../images/slider_img3.png" alt="Image placeholder" class="img-fluid">
+					<div class="custom_slider_txt">
+						<p class="paraXS">3/4 &nbsp; Social gathering, garden, pioneers</p>
+					</div>
+					
+				</div>
+			</div>
+			<div class="slider-item slider-item-bg-4">					   
+				<div class="slider-text">
+					<img src="../images/slider_img4.png" alt="Image placeholder" class="img-fluid">
+					<div class="custom_slider_txt">
+						<p class="paraXS">4/4 &nbsp; Social gathering, garden, pioneers</p>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<section class="bg-drak_green custom_sign_up_section">
+		<div class="pb80 pt80 text-center custom_sign_text headingr3"><a href="javascript:;" data-toggle="modal" data-target="#signinModal">Stay the entire week overlooking the most beautiful beach in the world  <img src="../img/arrow-right.svg"></a></div>
+	</section>
+	
+   
+    <!-- END section -->
+    
+    
+    <footer class="footer-section bg-light_green pt80 ">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-3 mb-5">
+		  	<div class="footer_logo pb40">
+				<img src="../images/F-11.png" >
+			</div>
+			<div class="footer_address pb40">
+				<div class="paraSm">The Shack<br>
+					82 llandudno road 7806</div>
+			</div>
+			<div class="footer_social pb40 social">
+				 <!--a href="#"><span class="fa fa-facebook"></span></a>
+				 <a href="#"><span class="fa fa-twitter"></span></a>
+				 <a href="#"><span class="fa fa-youtube-play"></span></a-->
+				 <a href="https://www.instagram.com/shack_llandudno/"><span class="fa fa-instagram"></span></a>
+			</div>
+          </div>
+          <div class="col-md-3 mb-5">
+			<ul class="list-unstyled link">
+				<li><a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1-Y4p72WFjMgp925ZrXcxS0buu-lx5fGnBYcoaGkJUprhKLXHwnTe61HEDQKCVtC25DVw9QUEW">🗓️ Availability calendar</a></li>
+				<li><a href="#" class="nodashunder payment_url" data-id="shack_stack">Stay a long weekend</a></li>
+				<li><a href="#" class="nodashunder payment_url" data-id="book_an_entire_week">Stay an entire week</a></li>
+				<li><a href="#" class="payment_url" data-id="book_an_4hr_shoot"> Book a 4 hour shoot</a></li>
+				<li><a href="#" class="nodashunder payment_url" data-id="camping_long_weekend"
+					>🏕️ Camping for 4 long weekend</a></li>
+				<li><a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ24Q9IxlnKHP7lZMSOpPAnIld4USXk5t6KSR9Dbg79bOoRWf96BXpm3PcdDnDc-CkZN7F5yf9o7">Deep South Ambassador</a></li>
+			  
+				
+				</ul>
+          </div>
+          <div class="col-md-3 mb-5 pr-md-5">
+		  
+            
+          </div>
+          <div class="col-md-3 mb-5 contact-info">
+            	
+				<div class="paraXS">Fax:</div>
+				<div class="paraSm pb32">llandudno_shack</div>
+          </div>
+        </div>
+        <div class="row bordertop pt40 pb40 footer_copy">
+          <div class="col-md-6 text-left paraXS">
+&copy; Copyright  <script>document.write(new Date().getFullYear());</script> The shack</div>
+            
+          <div class="col-md-6 text-right paraXS">
+          
+          </div>
+        </div>
+		
+      </div>
+	  
+    </footer>
+	
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/main.js"></script>
+	<script type="text/javascript">
+		jQuery( document ).ready(function() {
+			jQuery(".custom_point_list .custom_point_click").click(function(){
+				jQuery(".custom_point_click").removeClass("click_active");
+				jQuery(this).addClass("click_active");
+				var custom_click = jQuery(this).attr("data-sl");
+				jQuery(".custom_click_image").removeClass("image_show");
+				jQuery( ".click_gallery .custom_click_image" ).each(function() {
+					var custom_img_click = jQuery(this).attr("data-sl");
+					if(custom_click == custom_img_click)
+					{
+						var custom_img_click = jQuery(this).addClass("image_show");
+					}
+			  	});				
+			});
+		});
+		$('.slider').owlCarousel({
+		loop:true,
+			  margin:0,
+			  nav:true,
+			  mouseDrag: false,
+			  items:1,
+			  dots: false,
+			  autoHeight: true,
+			  autoplay: false,
+			  smartSpeed:1500,
+			  autoplayHoverPause: true,
+			  animateOut: "slideOutLeft",
+			  animateIn: "slideInRight",
+			  navText: [
+				"<img src='../img/left.svg' class='bx-fade-left'/>",
+				   "<img src='../img/right.svg' class='bx-fade-right'/>",
+					],
+			  });
+		$('.insta_story').owlCarousel({
+			center: false,
+			items:2.5,
+			loop:false,
+			nav:true,
+			margin:20,
+			stagePadding: 15,
+			navText: [
+				"<img src='img/left.svg' class='bx-fade-left'/>",
+				   "<img src='img/right.svg' class='bx-fade-right'/>",
+					],
+		   responsiveClass:true,
+			responsive:{
+				0:{
+					items:1.5,
+					nav:true
+				},
+				600:{
+					items:1.5,
+					nav:true
+				},
+				1024:{
+					margin:20,
+					items:3.5,
+					nav:true
+				}
+			}
+		});
+	</script>
+  </body>
+</html>

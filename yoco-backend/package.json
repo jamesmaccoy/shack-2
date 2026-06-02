@@ -1,0 +1,16 @@
+{
+  "name": "yoco-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Creates Yoco checkout sessions from Firestore package documents",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
