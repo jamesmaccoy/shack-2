@@ -3,3 +3,4 @@
 .env.*.local
 *-firebase-adminsdk*.json
 serviceAccount*.json
+node_modules/

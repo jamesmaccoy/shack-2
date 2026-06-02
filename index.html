@@ -585,7 +585,7 @@ at The Shack</div>
           var buttonValue = jQuery(this).data("id"); // or jQuery(this).text();
           if (buttonValue) {
             jQuery.ajax({
-              url: "https://yoco-backend.vercel.app/api/v1/generate_checkout_link",
+              url: "/api/v1/generate_checkout_link",
               method: "POST",
               contentType: "application/json",
               data: JSON.stringify({ type: buttonValue }),

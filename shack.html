@@ -633,15 +633,21 @@ at The Shack</div>
           var buttonValue = jQuery(this).data("id"); // or jQuery(this).text();
           if (buttonValue) {
             jQuery.ajax({
-              url: "https://yoco-backend.vercel.app/api/v1/generate_checkout_link",
+              url: "/api/v1/generate_checkout_link",
               method: "POST",
-              data: {
-				type : buttonValue
-			  },
+              contentType: "application/json",
+              data: JSON.stringify({ type: buttonValue }),
               success: function (request) {
-                if (request?.status === true) {
-                  window.location.href = request?.data?.redirectUrl;
+                if (request?.status === true && request?.data?.redirectUrl) {
+                  window.location.href = request.data.redirectUrl;
+                } else {
+                  console.error("Checkout error:", request?.data);
+                  alert("Could not start payment. Please try again or contact us.");
                 }
+              },
+              error: function (xhr) {
+                console.error("Checkout request failed:", xhr.responseText);
+                alert("Could not start payment. Please try again or contact us.");
               },
             });
           }
