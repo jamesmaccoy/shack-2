@@ -25,6 +25,7 @@ function getFirestore() {
 
     app = admin.initializeApp({
       credential: admin.credential.cert(credentials),
+      projectId: credentials.project_id,
     });
     cachedProjectId = credentials.project_id;
   }
@@ -54,5 +55,11 @@ async function getPackage(type) {
   return null;
 }
 
-module.exports = { getPackage, getProjectId };
+async function listPackageDocIds(limit = 10) {
+  const db = getFirestore();
+  const snap = await db.collection("packages").limit(limit).get();
+  return snap.docs.map((d) => d.id);
+}
+
+module.exports = { getPackage, getProjectId, listPackageDocIds };
 

@@ -1,4 +1,4 @@
-const { getPackage, getProjectId } = require("../_lib/firebase");
+const { getPackage, getProjectId, listPackageDocIds } = require("../_lib/firebase");
 const { parsePriceToCents, createCheckout } = require("../_lib/yoco");
 
 const PACKAGE_LABELS = {
@@ -31,6 +31,25 @@ module.exports = async function handler(req, res) {
   // /api/v1/generate_checkout_link?type=shack_stack
   if (req.method !== "POST" && req.method !== "GET") {
     return res.status(405).json({ status: false, data: "Method not allowed" });
+  }
+
+  // Diagnostic mode (no type required): ?diag=1&token=...
+  if (req.query?.diag === "1") {
+    try {
+      const token = req.query?.token;
+      if (!process.env.DIAG_TOKEN || token !== process.env.DIAG_TOKEN) {
+        return res.status(403).json({ status: false, data: "Forbidden" });
+      }
+      const ids = await listPackageDocIds(10);
+      return res.status(200).json({
+        status: true,
+        projectId: getProjectId(),
+        packageDocIds: ids,
+      });
+    } catch (err) {
+      console.error("generate_checkout_link diag:", err);
+      return res.status(500).json({ status: false, data: err.message });
+    }
   }
 
   const type = getType(req);
