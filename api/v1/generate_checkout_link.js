@@ -40,11 +40,20 @@ module.exports = async function handler(req, res) {
       if (!process.env.DIAG_TOKEN || token !== process.env.DIAG_TOKEN) {
         return res.status(403).json({ status: false, data: "Forbidden" });
       }
-      const ids = await listPackageDocIds(10);
+      const ids = await listPackageDocIds(25);
+      // Also explicitly check the IDs your site expects.
+      // eslint-disable-next-line global-require
+      const { getPackage } = require("../_lib/firebase");
+      const existsShackStack = (await getPackage("shack_stack")) != null;
+      const existsSpaceShackStack = (await getPackage(" shack_stack")) != null;
       return res.status(200).json({
         status: true,
         projectId: getProjectId(),
         packageDocIds: ids,
+        exists: {
+          shack_stack: existsShackStack,
+          " shack_stack": existsSpaceShackStack,
+        },
       });
     } catch (err) {
       console.error("generate_checkout_link diag:", err);
