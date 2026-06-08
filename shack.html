@@ -233,7 +233,7 @@
 			</div>	
 		</div>
 	</section>
-	<section class="bg-light custom_dining_sec custom_day_lunch_sec p160" style="background-image: url('images/7847fe1cb606a55334069692a1412523.png');background-repeat: no-repeat;background-size: cover;">
+	<section class="bg-light custom_dining_sec custom_day_lunch_sec p160 overflow-hidden" style="background-image: url('images/7847fe1cb606a55334069692a1412523.png');background-repeat: no-repeat;background-size: cover;">
        <div class="d-md-flex d-block">
         <div class="text p-5" data-aos="fade">
 			<div class="headingr5 pb16 clrwhite">Day lunch at The Cottage</div>
@@ -249,7 +249,7 @@
     
 
 	
-    <section class="bg-light custom_2col_inner p160 pt0 custom_spa_sec">
+    <section class="bg-light custom_2col_inner p160 pt0 custom_spa_sec overflow-hidden">
 		<div class="container overflow-hidden">
 			<div class="row justify-content-center d-md-flex d-block">
 				<div class="col-12 col-md-6  pl8pr">
@@ -465,24 +465,6 @@
 			</div>
 		</div>	
 		
-		
-		<div class="modal fade custom_day_lunch_video_modal" id="dayLunchVideoModal" tabindex="-1" role="dialog" aria-labelledby="dayLunchVideoModalLabel" aria-hidden="true">
-		  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-			<div class="modal-content">
-			  <div class="modal-body">
-			  	<button type="button" class="close custom_popup_close" data-dismiss="modal" aria-label="Close">
-				  <span aria-hidden="true">&times;</span>
-				</button>
-				<div class="custom_video_section">
-				  <div class="video-wrapper">
-					<iframe id="dayLunchVideoIframe" class="about_iframe" src="" data-src="https://www.youtube.com/embed/9N8cK58xrfM?autoplay=1&controls=1&rel=0" title="Day lunch at The Cottage" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				  </div>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-
 		<div class="modal fade custom_signin_popup" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="signinModalLabel" aria-hidden="true">
 		  <div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -530,7 +512,25 @@
 		
 		
 	 </footer-->
-     <script src="js/jquery-3.2.1.min.js"></script>
+
+	<div class="modal fade custom_day_lunch_video_modal" id="dayLunchVideoModal" tabindex="-1" role="dialog" aria-labelledby="dayLunchVideoModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		<div class="modal-content">
+		  <div class="modal-body">
+			<button type="button" class="close custom_popup_close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+			<div class="custom_video_section">
+			  <div class="video-wrapper">
+				<iframe id="dayLunchVideoIframe" class="about_iframe" src="" data-src="https://www.youtube.com/embed/9N8cK58xrfM?autoplay=1&controls=1&rel=0" title="Day lunch at The Cottage" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -608,11 +608,13 @@
           }
         });
 
+			jQuery("[data-target='#dayLunchVideoModal']").on("click", function (e) {
+				e.preventDefault();
+				jQuery("#dayLunchVideoModal").modal("show");
+			});
 			jQuery("#dayLunchVideoModal").on("show.bs.modal", function () {
 				var iframe = jQuery("#dayLunchVideoIframe");
-				if (!iframe.attr("src")) {
-					iframe.attr("src", iframe.data("src"));
-				}
+				iframe.attr("src", iframe.data("src"));
 			});
 			jQuery("#dayLunchVideoModal").on("hidden.bs.modal", function () {
 				jQuery("#dayLunchVideoIframe").attr("src", "");
