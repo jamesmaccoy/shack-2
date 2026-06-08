@@ -585,6 +585,23 @@ width: 100%;
 .custom_video_section .video-wrapper{
    position: relative;padding-bottom: 54.6%;padding-top: 25px;height: 0;
 }
+.custom_day_lunch_sec .custom_day_lunch_actions .tr_white_button + .tr_white_button{
+   margin-left:16px;
+}
+.custom_day_lunch_video_modal .modal-body{
+   padding:0;background:#000;
+}
+.custom_day_lunch_video_modal .modal-dialog{
+   max-width:900px;
+}
+.custom_day_lunch_video_modal .custom_popup_close{
+   background:#F9F7F2!important;
+}
+@media (max-width:767px){
+   .custom_day_lunch_sec .custom_day_lunch_actions .tr_white_button + .tr_white_button{
+      margin-left:0;margin-top:16px;
+   }
+}
 .custom_sign_text a{
    color:#fff!important
 }
